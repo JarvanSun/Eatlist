@@ -8,7 +8,7 @@
 import SwiftUI
 
 protocol LandingViewModel: ObservableObject {
-    var isPresentingItemView: Bool { get set }
+    var isItemViewPresenting: Bool { get set }
     var itemToAdd: Item { get set }
     
     func addButtonTapped()
@@ -16,26 +16,37 @@ protocol LandingViewModel: ObservableObject {
     func commit()
 }
 
-
-class LandingViewModelImpl: LandingViewModel {
+final class LandingViewModelImpl: LandingViewModel {
     @Published var itemToAdd: Item = .empty
-    @Published var isPresentingItemView = false {
+    @Published var isItemViewPresenting = false {
         didSet {
-            if !isPresentingItemView && oldValue { itemToAdd = .empty }
+            if !isItemViewPresenting && oldValue { itemToAdd = .empty }
         }
+    }
+    
+    private let resolver: LandingViewResolving
+    
+    init(resolver: LandingViewResolving = LandingViewResolver()) {
+        self.resolver = resolver
     }
     
     func addButtonTapped() {
         itemToAdd = .empty
-        isPresentingItemView = true
+        isItemViewPresenting = true
     }
     
     func cancelButtonTapped() {
-        isPresentingItemView = false
+        isItemViewPresenting = false
     }
     
     func commit() {
-        isPresentingItemView = false
+        saveItem()
+        isItemViewPresenting = false
+    }
+    
+    private func saveItem() {
+        let newItem = itemToAdd
+        
+        // TODO: Store item
     }
 }
-

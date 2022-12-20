@@ -11,7 +11,7 @@ struct FoodCard: View {
     var body: some View {
         Card {
             ZStack(alignment: .bottom) {
-                Image(systemName: "plus")
+                Image("dish-1")
                     .resizable()
                     .scaledToFill()
                 

@@ -28,7 +28,7 @@ struct LandingView<ViewModel>: View where ViewModel: LandingViewModel {
                 .buttonStyle(.plain)
             }
         }
-        .sheet(isPresented: $model.isPresentingItemView) {
+        .sheet(isPresented: $model.isItemViewPresenting) {
             NavigationStack {
                 ItemView(item: $model.itemToAdd)
                     .toolbar {
@@ -41,7 +41,6 @@ struct LandingView<ViewModel>: View where ViewModel: LandingViewModel {
                         }
                     }
             }
-            
         }
     }
 }

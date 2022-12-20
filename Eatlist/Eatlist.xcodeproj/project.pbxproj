@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41ECCFD2951F05F00C1E00C /* LandingViewResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41ECCFC2951F05F00C1E00C /* LandingViewResolver.swift */; };
 		F460F641292DEBE4001D6805 /* EatlistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460F640292DEBE4001D6805 /* EatlistApp.swift */; };
 		F460F645292DEBE5001D6805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F460F644292DEBE5001D6805 /* Assets.xcassets */; };
 		F460F648292DEBE5001D6805 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F460F647292DEBE5001D6805 /* Preview Assets.xcassets */; };
-		F460F652292DEBE5001D6805 /* EatlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460F651292DEBE5001D6805 /* EatlistTests.swift */; };
+		F460F652292DEBE5001D6805 /* LandingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460F651292DEBE5001D6805 /* LandingViewModelTests.swift */; };
 		F460F65C292DEBE5001D6805 /* EatlistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460F65B292DEBE5001D6805 /* EatlistUITests.swift */; };
 		F460F65E292DEBE5001D6805 /* EatlistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460F65D292DEBE5001D6805 /* EatlistUITestsLaunchTests.swift */; };
 		F460F66F292DED13001D6805 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460F66E292DED13001D6805 /* Card.swift */; };
@@ -41,12 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F41ECCFC2951F05F00C1E00C /* LandingViewResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewResolver.swift; sourceTree = "<group>"; };
 		F460F63D292DEBE4001D6805 /* Eatlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F460F640292DEBE4001D6805 /* EatlistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatlistApp.swift; sourceTree = "<group>"; };
 		F460F644292DEBE5001D6805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F460F647292DEBE5001D6805 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F460F64D292DEBE5001D6805 /* EatlistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EatlistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F460F651292DEBE5001D6805 /* EatlistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatlistTests.swift; sourceTree = "<group>"; };
+		F460F651292DEBE5001D6805 /* LandingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModelTests.swift; sourceTree = "<group>"; };
 		F460F657292DEBE5001D6805 /* EatlistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EatlistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F460F65B292DEBE5001D6805 /* EatlistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatlistUITests.swift; sourceTree = "<group>"; };
 		F460F65D292DEBE5001D6805 /* EatlistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatlistUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -126,7 +128,7 @@
 		F460F650292DEBE5001D6805 /* EatlistTests */ = {
 			isa = PBXGroup;
 			children = (
-				F460F651292DEBE5001D6805 /* EatlistTests.swift */,
+				F460F651292DEBE5001D6805 /* LandingViewModelTests.swift */,
 			);
 			path = EatlistTests;
 			sourceTree = "<group>";
@@ -166,6 +168,7 @@
 				F460F678292DEF3D001D6805 /* Item.swift */,
 				F460F67A292DF058001D6805 /* LandingView.swift */,
 				F460F67C292DF333001D6805 /* ItemView.swift */,
+				F41ECCFC2951F05F00C1E00C /* LandingViewResolver.swift */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				F460F66F292DED13001D6805 /* Card.swift in Sources */,
 				F460F67D292DF333001D6805 /* ItemView.swift in Sources */,
 				F460F673292DEE9F001D6805 /* FoodCard.swift in Sources */,
+				F41ECCFD2951F05F00C1E00C /* LandingViewResolver.swift in Sources */,
 				F460F671292DEDFE001D6805 /* ViewExtensions.swift in Sources */,
 				F460F679292DEF3D001D6805 /* Item.swift in Sources */,
 				F460F675292DEF0B001D6805 /* HostView.swift in Sources */,
@@ -326,7 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F460F652292DEBE5001D6805 /* EatlistTests.swift in Sources */,
+				F460F652292DEBE5001D6805 /* LandingViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
